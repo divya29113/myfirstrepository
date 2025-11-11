@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Heading</h1>
+<!--<h1>Heading</h1>
 <h2>This is my first Heading</h2>
 <h3>Block level elements</h3>
 <p>this is the example of block level element</p>
@@ -25,8 +25,53 @@
     <li>milk</li>
     <li>Tea</li>
     <li>Coffee</li>
-</ul>
-
+</ul>-->
+<h1>Table</h1>
+<table border="3">
+    <thead>
+        <tr>
+            <th>Name </th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+    </thead>    
+        <tbody>
+            <tr>
+                <td>Divya</td>
+                <td>21</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>sanjay</td>
+                <td>20</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">This is a footer</td>
+            </tr>
+        </tfoot>
     
+</table>
+<h1>Form</h1>
+<form action="/register" method="get">
+    <p>
+        <label for="name1">Name</label>
+        <input type="text" name="name1" id="name1">
+    </p>
+    <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+    </p>    
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    <p>
+        <label for="pass">Passward</label>
+        <input type="password" name="pass" id="pass">
+    </p>    
+        <button type="submit">Submit</button>
+
+</form>   
 </body>
 </html>
