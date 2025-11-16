@@ -56,21 +56,52 @@
 </table>
 <h1>Form</h1>
 <form action="/register" method="get">
+    <fieldset>
+        <legend>User Details</legend>
     <p>
         <label for="name1">Name</label>
-        <input type="text" name="name1" id="name1">
+        <input type="text" name="name1" id="name1" placeholder="Enter Your Name">
+    </p>    
     </p>
     <p>
         <label for="age">Age</label>
-        <input type="number" name="age" id="age">
+        <input type="number" name="age" id="age" placeholder="Enter Your Age">
     </p>    
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
     <p>
-        <label for="pass">Passward</label>
-        <input type="password" name="pass" id="pass">
-    </p>    
+        <label for="pass">Passward</label> 
+        <input type="password" name="pass" id="pass" maxlength="7" minlength="4">
+
+    </p> 
+    <p>
+        <label for="Resume">Upload your Resume</label>
+        <input type="file" id="Resume"> 
+    </p>   
+    <!--<p>
+        <video controls>
+            <source src="sampe.mp4" >
+        </video> 
+
+    </p>-->
+    <p>
+        <label>Select Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </p>
+    <p>
+        <label for="skills"> Select Your Skills</label>
+        <select id="skills" name="yourskills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+            <option value="react">REACT</option>
+        </select>
+
         <button type="submit">Submit</button>
+        </fieldset>
 
 </form>   
 </body>
