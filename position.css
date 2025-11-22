@@ -44,6 +44,7 @@
     position:absolute;
     top: 50px;
 }
+/*fixed*/
 
 .fixed{
     border:3px solid violet ;
@@ -55,6 +56,8 @@
     left: 50px;
 
 }
+
+/*sticky*/
 .sticky{
     text-align: center;
     position: sticky;
